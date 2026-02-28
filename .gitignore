@@ -17,9 +17,10 @@ ngrok.exe
 finder.txt
 finder1.txt
 me.txt
-*.txt
 *.db
 *.log
+# Allow requirements.txt explicitly
+!requirements.txt
 
 # VS Code / IDE
 .vs/
