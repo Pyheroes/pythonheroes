@@ -30,6 +30,9 @@ def ping_websites():
 
 
 app = Flask(__name__, static_folder="static")
+scheduler = BackgroundScheduler()
+scheduler.add_job(func=ping_websites, trigger="interval", minutes=3)
+scheduler.start()
 
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
@@ -167,18 +170,11 @@ def invite_link(chat_id):
 #  -------------------------------------------------------------------------------------------------------------------------------
 
 #  -------------------------------------------------------------------------------------------------------------------------------
-
 if __name__ == "__main__":
-    # Initialize scheduler
-    scheduler = BackgroundScheduler()
-    # Add ping job to run every 3 minutes
-    scheduler.add_job(func=ping_websites, trigger="interval", minutes=3)
-    # Start the scheduler
-    scheduler.start()
-    print("Scheduler started. Pinging websites every 3 minutes.")
+    print("Vectors is in 3 spaces. Nothing to show you. This one na error 50,000")
 
-    # Run the Flask app
-    app.run(debug=True, port=5000, use_reloader=False)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
 
 
     
