@@ -1,6 +1,5 @@
+gunicorn
 Flask
 requests
 python-dotenv
 APScheduler
-gunicorn
-
