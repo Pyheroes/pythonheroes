@@ -1,0 +1,5 @@
+work_hard = "Learn"
+condition = "by God\'s grace"
+program = "programming"
+chinko = "language"
+Tinubu_na_old_man = "Starting date isjjj "

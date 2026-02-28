@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="{{url_for("static", filename="style.css")}}">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1 class="logo">MySite</h1>
+        <nav>
+            <a href="#">Home page</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Build Something Amazing</h2>
+        <p>Learning web development step by step.</p>
+        <button>Get Started now</button>
+        <a href="signup"> login</a>
+    </section>
+
+    <div class="form-container">
+        <form action="" method="post">
+
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="middle_name">Middle Name</label>
+            <input type="text" id="middle_name" name="middle_name" required>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+
+
+
+
+
+    <section class="cards">
+        <div class="card">
+            <h3>Simple</h3>
+            <p>Clean HTML structure.</p>
+        </div>
+        <div class="card">
+            <h3>Modern</h3>
+            <p>Beautiful CSS styling.</p>
+        </div>
+        <div class="card">
+            <h3>Scalable</h3>
+            <p>Ready for real projects.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>� 2026 MySite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

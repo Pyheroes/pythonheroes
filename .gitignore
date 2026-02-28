@@ -1,0 +1,32 @@
+# Python development
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project specific
+data.db
+token.env
+ngrok.exe
+finder.txt
+finder1.txt
+me.txt
+*.txt
+*.db
+*.log
+
+# VS Code / IDE
+.vs/
+.vscode/
+*.sln
+*.pyproj
+*.suo
+*.user
+*.userosscache
+*.sln.doccache
